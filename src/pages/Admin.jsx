@@ -1,0 +1,1 @@
+export default function Admin({ onReminder, onExport }) { return <section className='card'><h2>Admin</h2><button onClick={onReminder}>Send RSVP Reminder</button><button onClick={onExport}>Export Attendance CSV</button></section>; }
