@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { AuthProvider } from './context/AuthContext';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders officetreat heading', () => {
+  render(<AuthProvider><App /></AuthProvider>);
+  expect(screen.getByText(/OfficeTreat/i)).toBeInTheDocument();
 });
